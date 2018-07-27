@@ -26,6 +26,15 @@
     "adminPassword": {
       "type": "securestring"
     },
+    "serverUrl": {
+      "value": "url"
+    },
+    "serverUser": {
+      "value": "couchbase"
+    },
+    "serverPassword": {
+      "value": "couchbase"
+    },
     "license": {
       "type": "string"
     },
@@ -323,7 +332,7 @@
                       "[concat(variables('extensionUrl'), 'server.sh')]",
                       "[concat(variables('extensionUrl'), 'util.sh')]"
                     ],
-                    "commandToExecute": "[concat('bash server.sh ', parameters('serverVersion'), ' ', parameters('adminUsername'), ' ', parameters('adminPassword'), ' ', variables('uniqueString'), ' ', parameters('location'))]"
+                    "commandToExecute": "[concat('bash server.sh ', parameters('serverVersion'), ' ', parameters('adminUsername'), ' ', parameters('adminPassword'), ' ', variables('uniqueString'), ' ', parameters('location'), ' ', parameters('serverUrl'), ' ', parameters('serverUser'), ' ', parameters('serverPassword'))]"
                   }
                 }
               }

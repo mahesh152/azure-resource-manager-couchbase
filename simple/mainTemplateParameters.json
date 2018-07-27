@@ -1,6 +1,6 @@
 {
   "serverNodeCount": {
-    "value": 3
+    "value": 1
   },
   "serverDiskSize": {
      "value": 32
@@ -9,7 +9,7 @@
     "value": "5.5.0"
   },
   "syncGatewayNodeCount": {
-    "value": 2
+    "value": 0
   },
   "syncGatewayVersion": {
     "value": "2.0.0"
@@ -23,7 +23,16 @@
   "adminPassword": {
     "value": "foo123!"
   },
+  "serverUrl": {
+    "value": "url"
+  },
+  "serverUser": {
+    "value": "couchbase"
+  },
+  "serverPassword": {
+    "value": "couchbase"
+  },
   "license": {
-    "value": "hourly_pricing"
+    "value": "byol"
   }
 }
