@@ -7,6 +7,9 @@ adminUsername=$2
 adminPassword=$3
 uniqueString=$4
 location=$5
+serverUrl=$6
+serverUser=$7
+serverPassword=$8
 
 echo "Using the settings:"
 echo version \'$version\'
@@ -21,7 +24,13 @@ apt-get -y install python-httplib2
 apt-get -y install jq
 
 echo "Installing Couchbase Server..."
+
+if [[ "$serverUrl" == "" ]]; then
 wget http://packages.couchbase.com/releases/${version}/couchbase-server-enterprise_${version}-ubuntu16.04_amd64.deb
+else
+wget ${serverUrl} --user ${serverUser} --password ${serverPassword}
+fi
+
 dpkg -i couchbase-server-enterprise_${version}-ubuntu16.04_amd64.deb
 apt-get update
 apt-get -y install couchbase-server
