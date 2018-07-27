@@ -27,13 +27,14 @@
       "type": "securestring"
     },
     "serverUrl": {
-      "value": "url"
+      "type": "string",
+      "defaultValue": ""
     },
     "serverUser": {
-      "value": "couchbase"
+      "type": "string"
     },
     "serverPassword": {
-      "value": "couchbase"
+      "type": "string"
     },
     "license": {
       "type": "string"
