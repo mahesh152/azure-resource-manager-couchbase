@@ -21,7 +21,7 @@
     "value": "couchbase"
   },
   "adminPassword": {
-    "value": "password"
+    "value": "foo123!"
   },
   "serverUrl": {
     "value": "url"
