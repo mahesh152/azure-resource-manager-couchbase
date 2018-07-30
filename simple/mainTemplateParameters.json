@@ -18,7 +18,7 @@
     "value": "Standard_DS3_v2"
   },
   "adminUsername": {
-    "value": "Administrator"
+    "value": "couchbase"
   },
   "adminPassword": {
     "value": "password"
