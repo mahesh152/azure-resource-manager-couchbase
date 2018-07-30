@@ -18,10 +18,10 @@
     "value": "Standard_DS3_v2"
   },
   "adminUsername": {
-    "value": "couchbase"
+    "value": "Administrator"
   },
   "adminPassword": {
-    "value": "foo123!"
+    "value": "password"
   },
   "serverUrl": {
     "value": "url"
